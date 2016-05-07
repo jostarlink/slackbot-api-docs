@@ -1,7 +1,8 @@
+
 #Hearing
  You want your bots to interact with others and answer questions, your bot must know how to hear and read.
  
- There are three ways to listen on messages, `hear`, `listen` and `command`.
+ There are two ways to listen on messages, `hear` and `listen`.
  
  ###hear
   Hearing is the simplest case of hearing, you just enter a room (channel) and hear everything.
@@ -46,7 +47,3 @@ bot.listen(/Are you okay?/i, async message => {
 ```
 
 ![Bot doesn't answer if I don't mention him!](hearing-listen.png)
-
-###command
- Sometimes you want to read some input from a sentence, in these cases regex is hard!
-That's why there is `command`.
