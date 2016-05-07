@@ -47,4 +47,5 @@ bot.listen(/Are you okay?/i, async message => {
 
 ![Bot doesn't answer if I don't mention him!](hearing-listen.png)
 
-
+###command
+ Bots are not always that cool, 
