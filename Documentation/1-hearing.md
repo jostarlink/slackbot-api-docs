@@ -48,4 +48,5 @@ bot.listen(/Are you okay?/i, async message => {
 ![Bot doesn't answer if I don't mention him!](hearing-listen.png)
 
 ###command
- Sometimes you want to define a command with a syntax, or you just want to take some parameter from user, in these situations regex is hard!
+ Sometimes you want to read some input from a sentence, in these cases regex is hard!
+That's why there is `command`.
