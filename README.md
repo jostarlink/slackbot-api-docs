@@ -26,5 +26,11 @@ bot.listen(/Hello/, message => {
 });
 ```
 
- Alright, now run the program and send "Hello" to your bot!
+ Alright, now run the program and send "Hello" to your bot! This is the Hello World of the bot world!
  
+ ![Hello Bot!](Screen Shot 2016-05-07 at 12.42.28.png)
+ 
+ Congratulations, you just made your first bot, and it was easy, wasn't it?
+ 
+ ###Learn more
+  A fan of bots already? Explore the documentation and create amazing bots!
