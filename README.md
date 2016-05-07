@@ -1,12 +1,12 @@
 # Introduction
  Hey! This is an introduction to `slackbot-api`, this introduction will get you started with writing a simple Slack Bot, and no, it's not hard!
 
-###Slack Side
+### Slack Side
  Okay, first things first, we have to create a bot in our Slack Team (if you don't have a slack team, [create one](https://slack.com/)).
 
 To do so, open [Custom Integrations](https://pichak.slack.com/apps/manage/custom-integrations), click **Bots** and **Add configuration**, enter a name (You can just go with Sibe) and done. In the next page, upload an image for your bot (Sibe's avatar!) or choose an emoji. You also find an **API Token** there, that's how you connect to your bot, you need it for the next step!
 
-###Breathing life into your bot
+### Breathing life into your bot
  Now's the time when your bot actually does something.
  Initialize a project:
 ```bash
@@ -30,14 +30,16 @@ bot.listen(/Hello/, message => {
  
  ![Hello Bot!](Screen Shot 2016-05-07 at 12.42.28.png)
  
- Congratulations, you just made your first bot, and it was easy, wasn't it?
+ Congratulations 🎉, you just made your first bot, and it was easy, wasn't it? 
  
- ###Learn more
+ *We used [Node ^6.0.0](https://nodejs.org/dist/v6.0.0/node-v6.0.0.pkg) to run the program above, you can get the latest version [here](https://nodejs.org/en/download/current/).
+ 
+ ### Learn more
   A fan of bots already? Explore the documentation and create amazing bots!
   
   Have questions? Join our Slack Team and ask your questions!
   Found a bug? Please fill an issue on GitHub.
   Want to contribute? Read our contribution guide and start hacking! Pull-requests are always welcome!
   
-  ###See Also
+  ### See Also
   The Sibe Bot Platform
