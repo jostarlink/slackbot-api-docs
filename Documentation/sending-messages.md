@@ -49,8 +49,8 @@ bot.listen(/Hello/i, message => {
 });
 ```
  
- ![Mirror bot!](Screen Shot 2016-05-07 at 16.01.27.png)
- 
+
+ ![A mirror bot!](sending-messages-mirror.png)
  
  #Updating and Deleting messages
   Slack gives us the ability to update and delete our messages. Each message has a `ts` (short for timestamp), which the identifier of messages.
@@ -85,6 +85,7 @@ bot.listen(/Hello/i, async message => {
  }, 1000);
 });
 ```
+
+ ![Update messages](sending-messages-update.png)
  
- ![Updating messages](Screen Shot 2016-05-07 at 16.12.24.png)
  
