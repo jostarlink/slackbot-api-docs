@@ -25,15 +25,15 @@ bot.listen(/Hello/, message => {
   message.reply('Hello human!');
 });
 ```
+ *You should use [Node ^6.0.0](https://nodejs.org/dist/v6.0.0/node-v6.0.0.pkg) to run the program above, you can get the latest version [here](https://nodejs.org/en/download/current/).*
+
 
  Alright, now run the program and send "Hello" to your bot! This is the Hello World of the bot world!
  
  ![Hello Bot!](Screen Shot 2016-05-07 at 12.42.28.png)
  
  Congratulations 🎉, you just made your first bot, and it was easy, wasn't it? 
- 
- *We used [Node ^6.0.0](https://nodejs.org/dist/v6.0.0/node-v6.0.0.pkg) to run the program above, you can get the latest version [here](https://nodejs.org/en/download/current/).
- 
+  
  ### Learn more
   A fan of bots already? Explore the documentation and create amazing bots!
   
