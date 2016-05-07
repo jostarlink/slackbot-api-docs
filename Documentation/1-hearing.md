@@ -48,4 +48,4 @@ bot.listen(/Are you okay?/i, async message => {
 ![Bot doesn't answer if I don't mention him!](hearing-listen.png)
 
 ###command
- Bots are not always that cool, 
+ Sometimes you want to define a command with a syntax, or you just want to take some parameter from user, in these situations regex is hard!
