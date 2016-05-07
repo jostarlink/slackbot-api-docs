@@ -24,6 +24,9 @@ There are three arguments.
 Normally, RTM API is used to send the message, unless you specify `websocket: false` in params.
 If you want to use the options of [`chat.postMessage`](https://api.slack.com/methods/chat.postMessage), you must disable `websocket`.
 
+An error is thrown if the specified channel is not found.
+
+This method returns a promise which resolves to the message object.
 
 ###sendAsUser
  This method might look a little scary, and fun at the same time. Using this method you can send a message using a user's icon and username, pretending to be the user! Wait, what?!
@@ -49,4 +52,11 @@ bot.listen(/Hello/i, message => {
  ![Mirror bot!](Screen Shot 2016-05-07 at 16.01.27.png)
  
  
+ #Updating and Deleting messages
+  Slack gives us the ability to update and delete our messages. Each message has a `ts` (short for timestamp), which the identifier of messages.
+  
+```javascript
+const msg = await bot.sendMessage('general', 'Hi');
+bot.updateMessage('general', msg.ts, 'Hello!?');
+```
  
