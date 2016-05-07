@@ -13,7 +13,7 @@ To do so, open [Custom Integrations](https://pichak.slack.com/apps/manage/custom
  mkdir bot
  cd bot
  npm init -y
- npm install slackbot-api
+ npm install -S slackbot-api
 ```
  Now create a file, call it whatever you want (e.g. `index.js`) and import `slackbot-api`.
  
@@ -26,5 +26,5 @@ bot.listen(/Hello/, message => {
 });
 ```
 
- Alright, now let's run our code and see what happens.
+ Alright, now run the program and send "Hello" to your bot!
  
