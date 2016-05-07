@@ -17,4 +17,5 @@ bot.sendMessage('general', "I'm pretending to be Joe", { username: 'Joe' });
 There are three arguments.
 `channel` – either name or ID of a channel/group/IM/user, whatever
 `text` – self-explanatory
+`params` – an object of options to get passed to Slack method [`chat.postMessage`](https://api.slack.com/methods/chat.postMessage).
 
