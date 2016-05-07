@@ -34,3 +34,10 @@ bot.listen(/Hello/, message => {
  
  ###Learn more
   A fan of bots already? Explore the documentation and create amazing bots!
+  
+  Have questions? Join our Slack Team and ask your questions!
+  Found a bug? Please fill an issue on GitHub.
+  Want to contribute? Read our contribution guide and start hacking! Pull-requests are always welcome!
+  
+  ###See Also
+  The Sibe Bot Platform
