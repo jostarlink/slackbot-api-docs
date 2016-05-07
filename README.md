@@ -12,10 +12,19 @@ To do so, open [Custom Integrations](https://pichak.slack.com/apps/manage/custom
 ```bash
  mkdir bot
  cd bot
- npm init
+ npm init -y
  npm install slackbot-api
 ```
- Now create a file, call it whatever you want (e.g. `index.js`), and import `slackbot-api`.
+ Now create a file, call it whatever you want (e.g. `index.js`) and import `slackbot-api`.
  
- ```javascript
- const Bot = require('
+```javascript
+import Bot from 'slackbot-api';
+
+const bot = new Bot({ token: 'YOUR_API_TOKEN' });
+bot.listen(/Hello/, message => {
+  message.reply('Hello human!');
+});
+```
+
+ Alright, now let's run our code and see what happens.
+ 
