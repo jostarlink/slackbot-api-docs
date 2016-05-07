@@ -55,8 +55,36 @@ bot.listen(/Hello/i, message => {
  #Updating and Deleting messages
   Slack gives us the ability to update and delete our messages. Each message has a `ts` (short for timestamp), which the identifier of messages.
   
+ Message instances also have `update` and `delete` methods for ease of use.
+  
 ```javascript
 const msg = await bot.sendMessage('general', 'Hi');
 bot.updateMessage('general', msg.ts, 'Hello!?');
+bot.deleteMessage('general', msg.ts);
+
+msg.update('Hello!?');
+msg.delete();
 ```
+ 
+ Example:
+ 
+```javascript
+'use strict';
+
+const Bot = require('slackbot-api');
+
+const bot = new Bot({ token: 'xoxb-40985785061-cHXNgAqKWILTfO4XfEmxuDVe' });
+bot.listen(/Hello/i, async message => {
+ let i = 5;
+ const msg = await message.reply(i + '');
+
+ const intv = setInterval(() => {
+   msg.update(--i);
+
+   if (i === 0) clearInterval(intv);
+ }, 1000);
+});
+```
+ 
+ ![Updating messages](Screen Shot 2016-05-07 at 16.12.24.png)
  
