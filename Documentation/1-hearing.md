@@ -19,7 +19,7 @@ bot.hear(message => {
     exclamation++;
   }
   
-  if (exclamation > 10) {
+  if (exclamation > 3) {
     message.reply("What's going on? You're all bumped up!");
   }
 });
@@ -42,4 +42,4 @@ bot.listen(/Are you okay?/i, async message => {
 });
 ```
 
-![Me: Are you okay? Robot: Why do you even bother asking a robot!?](Screen Shot 2016-05-07 at 16.35.10.png)
+![Bot doesn't answer if I don't mention him!](hearing-listen.png)
