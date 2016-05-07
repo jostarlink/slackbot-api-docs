@@ -15,15 +15,18 @@ bot.hear(/Who's there?/i, message => {
 let exclamation = 0;
 bot.hear(message => {
   // process messages
-  if (message.endsWith('!')) {
+  if (message.text.endsWith('!')) {
     exclamation++;
   }
   
   if (exclamation > 3) {
     message.reply("What's going on? You're all bumped up!");
+    exclamation = 0;
   }
 });
 ```
+
+![OMG! Did you see that?! I just heard it!](hearing-hear.png)
 
 ###listen
  Imagine you're reading in a noisy room, you don't bother what people are saying unless they mention your name. In `slackbot-api` world, that's called listening.
@@ -43,3 +46,5 @@ bot.listen(/Are you okay?/i, async message => {
 ```
 
 ![Bot doesn't answer if I don't mention him!](hearing-listen.png)
+
+
