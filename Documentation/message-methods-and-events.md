@@ -6,7 +6,7 @@
  
  ###reply
   As you've probably already seen in the examples, this method sends a reply to a message.
-  Slack doesn't have real _reply_ s, as Telegram does, so this method just sends a message to the same channel as the message.
+  Slack doesn't have real _reply_ s as Telegram does, so this method just sends a message to the same channel as the message.
   
 ```javascript
 bot.listen(/Turn on coffee machine/i, message => {
