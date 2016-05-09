@@ -92,7 +92,7 @@ bot.command('buy <char> [string]', message => {
 
 ```
 
-![Me: buy @slackbot some coffee Bot: I'll buy some coffee for @slackbot and deliver it at 12.](hearing-command-buy.png)
+![Me: buy @slackbot some coffee Bot: I'll buy some coffee for @slackbot and deliver it at 12. (I sent the message at 11:00)](hearing-command-buy.png)
 
 ```javascript
 bot.command('I love [string] music', message => {
