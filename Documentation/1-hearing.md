@@ -2,7 +2,7 @@
 #Hearing
  You want your bots to interact with others and answer questions, your bot must know how to hear and read.
  
- There are two ways to listen on messages, `hear` and `listen`.
+ There are three ways to listen on messages, `hear`, `listen` and `command`.
  
  ###hear
   Hearing is the simplest case of hearing, you just enter a room (channel) and hear everything.
@@ -47,3 +47,38 @@ bot.listen(/Are you okay?/i, async message => {
 ```
 
 ![Bot doesn't answer if I don't mention him!](hearing-listen.png)
+
+###command
+ When trying to read some parameter from the user, regexes look weird and hard to understand.
+ That's why we have `command`, a way to listen on messages with the ability to read parameters with a cleaner syntax.
+ 
+ Take a look at an example, then I'll explain it for you.
+ 
+```javascript
+bot.command('Say <string>', message => {
+  const [str] = message.match;
+  
+  message.reply(str);
+});
+
+// equivalent regex: /Say (.*)/gim
+```
+
+Damn, that's much more understandable than the equivalent regular expression.
+
+The rules are:
+
+* Parentheses `()`: passive, non-capturing groups `(?:expression)`
+* Tags `<>`: required, capturing groups `(expression+)`
+* Brackets `[]`: optional, capturing groups `(expression*)`
+* Types: You can either put a word, or a type inside (), [] and <>, types are as follows:
+  * string: anything, `.`
+  * number: digits, `\d`
+  * alphanumeric: digits and alphabet, `[A-Za-z0-9]`
+  * alphabet: alphabet, `[A-Za-z]`
+  * word: `\w`
+  * char: `\S`
+* Spaces, tabs and anything matching `\s` is replaced with `\s*`, making it optional
+* The `gim` flags are enabled for all `command`s
+
+Here are some examples to give you more insight of what can be done using this syntax:
