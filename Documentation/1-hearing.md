@@ -86,8 +86,8 @@ Here are some examples to give you more insight of what can be done using this s
 ```javascript
 bot.command('buy <char> [string]', message => {
   const [user, item] = message.match;
-  
-  message.reply(`I'll buy ${item} for ${user} and deliver it at 10pm.`);
+  var hours = new Date().getHours() + 1;
+  message.reply(`I'll buy ${item} for ${user} and deliver it at ${hours}.`);
 });
 
 bot.command('I love [string] music', message => {
