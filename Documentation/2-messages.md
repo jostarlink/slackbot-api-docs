@@ -18,7 +18,7 @@ bot.listen(/Turn on coffee machine/i, message => {
 ```
 
 ###update
- This method updates the message, it's just a shortcut for `bot.updateMessage`.
+ This method updates the message, it's a shortcut for `bot.updateMessage`.
  
 ```javascript
 bot.command('count from <number>', async message => {
@@ -35,3 +35,17 @@ bot.command('count from <number>', async message => {
 });
 ```
 
+###delete
+ This method deletes the message, it's a shortcut for `bot.deleteMessage`.
+
+###react
+This method adds a reaction to a message, it's a shortcut for `bot.react`.
+
+```javascript
+bot.hear(/Thank you/i, message => {
+  message.react(':pray:');
+  
+  // equivalent:
+  // bot.react(message.channel, message.ts, ':pray:');
+});
+```
