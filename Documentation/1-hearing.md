@@ -84,5 +84,31 @@ The rules are:
 Here are some examples to give you more insight of what can be done using this syntax:
 
 ```javascript
+bot.command('buy <char> [string]', message => {
+  const [user, item] = message.match;
+  
+  message.reply(`I'll buy a ${item} for ${user} and deliver it at 10pm.`);
+});
 
+bot.command('I love [string] music', message => {
+  const [genre] = message.match;
+  
+  switch (genre.trim().toLowerCase()) {
+    case 'metal':
+    case 'rock':
+      message.reply('Hell yeah!');
+      break;
+    case 'rap':
+    case 'hip hop':
+      message.reply('Only god can judge me.');
+      break;
+    case '':
+      message.reply('Who doesn\'t?!');
+      break;
+    default:
+      message.reply('I\'ll keep that in mind!');
+  }
+});
 ```
+
+![Me: I love music! Bot: Who doesn't? Me: I love rock music Bot: Hell yeah! Me: I love hip hop music Bot: Only god can judge me Me: I love funk music Bot: I'll keep that in mind](hearing-command-music.png)
