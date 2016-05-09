@@ -4,7 +4,10 @@
 ### Slack Side
  Okay, first things first, we have to create a bot in our Slack Team (if you don't have a slack team, [create one](https://slack.com/)).
 
-To do so, open [Custom Integrations](https://pichak.slack.com/apps/manage/custom-integrations), click **Bots** and **Add configuration**, enter a name (You can just go with Sibe) and done. In the next page, upload an image for your bot (Sibe's avatar!) or choose an emoji. You also find an **API Token** there, that's how you connect to your bot, you need it for the next step!
+To do so, open [Custom Integrations](https://pichak.slack.com/apps/manage/custom-integrations), click **Bots** and **Add configuration**, enter a name (You can just go with Sibe).
+
+In the next page, upload an image for your bot (Sibe's avatar!) or choose an emoji.
+On top of the page, there is the **API Token** you need to connect to your bot. Keep it somewhere, you need it in the next step.
 
 ### Breathing life into your bot
  Now's the time when your bot actually does something.
@@ -15,7 +18,7 @@ To do so, open [Custom Integrations](https://pichak.slack.com/apps/manage/custom
  npm init -y
  npm install -S slackbot-api
 ```
- Now create a file, call it whatever you want (e.g. `index.js`) and import `slackbot-api`.
+Create a file, call it whatever you want (e.g. `index.js`) and import `slackbot-api`.
  
 ```javascript
 import Bot from 'slackbot-api';
@@ -25,10 +28,10 @@ bot.listen(/Hello/, message => {
   message.reply('Hello human!');
 });
 ```
- *You should use [Node ^6.0.0](https://nodejs.org/dist/v6.0.0/node-v6.0.0.pkg) to run the program above, you can get the latest version [here](https://nodejs.org/en/download/current/).*
+ *You should either compile the program using [`babel`](http://babeljs.io/) or use [`babel-node`](http://babeljs.io/docs/usage/cli/#babel-node) for running the programs in this tutorial.
 
 
- Alright, now run the program and send "Hello" to your bot! This is the Hello World of the bot world!
+ Alright, now run the program and send "Hello" to your bot! This is the Hello World in the bot world.
  
  ![Hello Bot!](Screen Shot 2016-05-07 at 12.42.28.png)
  
