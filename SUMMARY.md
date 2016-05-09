@@ -5,4 +5,5 @@
    * [Sending Messages](Documentation/sending_messages.md)
    * [Hearing](Documentation/hearing.md)
    * [Message Methods and Events](Documentation/message-methods-and-events.md)
+   * Utilities
 
