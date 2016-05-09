@@ -6,5 +6,5 @@
    * [Hearing](Documentation/hearing.md)
    * [Message Methods and Events](Documentation/message-methods-and-events.md)
    * [Utilities](Documentation/utilities.md)
-   * Modifiers
+   * [Modifiers](Documentation/modifiers.md)
 
