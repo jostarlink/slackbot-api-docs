@@ -87,7 +87,7 @@ Here are some examples to give you more insight of what can be done using this s
 bot.command('buy <char> [string]', message => {
   const [user, item] = message.match;
   
-  message.reply(`I'll buy a ${item} for ${user} and deliver it at 10pm.`);
+  message.reply(`I'll buy ${item} for ${user} and deliver it at 10pm.`);
 });
 
 bot.command('I love [string] music', message => {
