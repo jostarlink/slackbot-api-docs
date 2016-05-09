@@ -21,7 +21,7 @@ bot.listen(/Turn on coffee machine/i, message => {
  This method updates the message, it's just a shortcut for `bot.updateMessage`.
  
 ```javascript
-bot.listen(/count from (\d+)/i, async message => {
+bot.command('count from <number>', async message => {
   const msg = await message.reply(
 });
 ```
