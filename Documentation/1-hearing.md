@@ -90,6 +90,11 @@ bot.command('buy <char> [string]', message => {
   message.reply(`I'll buy ${item} for ${user} and deliver it at ${hours}.`);
 });
 
+```
+
+![Me: buy @slackbot some coffee Bot: I'll buy some coffee for @slackbot and deliver it at 12.](hearing-command-buy.png)
+
+```javascript
 bot.command('I love [string] music', message => {
   const [genre] = message.match;
   
