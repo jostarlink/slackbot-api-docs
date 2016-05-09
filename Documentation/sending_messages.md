@@ -88,4 +88,4 @@ bot.listen(/Hello/i, async message => {
 
  ![Update messages](sending-messages-update.png)
  
- For more information, see [Message Methods and Events](message-methods-and-events).
+ For more information, see [Message Methods and Events](message-methods-and-events.html).
