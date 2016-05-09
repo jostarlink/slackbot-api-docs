@@ -22,6 +22,16 @@ bot.listen(/Turn on coffee machine/i, message => {
  
 ```javascript
 bot.command('count from <number>', async message => {
-  const msg = await message.reply(
+  let [num] = message.match;
+  num = parseInt(num, 10);
+  const msg = await message.reply(num);
+  
+  setInterval(() => {
+    msg.update(--n);
+    
+    // equivalent:
+    // bot.updateMessage(msg.channel, msg.ts, --n);
+  }, 1000);
 });
 ```
+
