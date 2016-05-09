@@ -82,3 +82,7 @@ The rules are:
 * The `gim` flags are enabled for all `command`s
 
 Here are some examples to give you more insight of what can be done using this syntax:
+
+```javascript
+
+```
