@@ -43,6 +43,3 @@ bot.icon('http://some.url/image.png');
 ```javascript
 bot.call('channels.setTopic', { channel: 'general', topic: 'My Topic' });
 ```
-
-
- 
