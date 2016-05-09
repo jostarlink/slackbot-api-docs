@@ -111,4 +111,4 @@ bot.command('I love [string] music', message => {
 });
 ```
 
-![Me: I love music! Bot: Who doesn't? Me: I love rock music Bot: Hell yeah! Me: I love hip hop music Bot: Only god can judge me Me: I love funk music Bot: I'll keep that in mind](hearing-command-music.png)
+![Me: I love music! Bot: Who doesn't?, Me: I love rock music Bot: Hell yeah!, Me: I love hip hop music Bot: Only god can judge me, Me: I love funk music Bot: I'll keep that in mind](hearing-command-music.png)
