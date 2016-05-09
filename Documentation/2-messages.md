@@ -109,7 +109,7 @@ msg.on('reaction_added', event => {
 });
 
 msg.on('reaction_removed', event => {
-  if (event.reaction !== 'thumbsup') votes++;
-  votes--;
+  if (event.reaction === 'thumbsup') votes--;
+  votes++;
 });
 ```
