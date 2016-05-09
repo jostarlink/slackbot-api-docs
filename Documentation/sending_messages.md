@@ -24,6 +24,8 @@ There are three arguments.
 Normally, RTM API is used to send the message, unless you specify `websocket: false` in params.
 If you want to use the options of [`chat.postMessage`](https://api.slack.com/methods/chat.postMessage), you must disable `websocket`.
 
+You can also provide an array of channels to send to multiple channels at once.
+
 An error is thrown if the specified channel is not found.
 
 This method returns a promise which resolves to the message object.
