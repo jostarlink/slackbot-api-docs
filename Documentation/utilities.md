@@ -38,8 +38,10 @@ bot.icon('http://some.url/image.png');
 ```
 
 ###call
- We do not provide methods for all Slack API methods, you can use this method to call Slack methods manually.
+ We do provide methods for all Slack API methods through `bot.api`, but you can also use this method to call Slack methods manually.
  
 ```javascript
-bot.call('channels.setTopic', { channel: 'general', topic: 'My Topic' });
+// possible use case
+const c = 'channels' || 'ims';
+bot.call(`${c}.history`);
 ```
