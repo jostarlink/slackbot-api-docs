@@ -58,6 +58,8 @@ bot.hear(/Thank you/i, message => {
 });
 ```
 
+For more information on methods, see [Methods](https://api.slack.com/methods).
+
 ##Events
  The events received from Slack API server are not as easy to use, because you'll have to match the received event's message id with your message, so we do that for you.
  
@@ -113,3 +115,5 @@ msg.on('reaction_removed', event => {
   votes++;
 });
 ```
+
+For more information on the events, see [Events](https://api.slack.com/events).
