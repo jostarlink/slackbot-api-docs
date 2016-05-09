@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Documentation](Documentation/README.md)
-   * Sending Messages
+   * [Sending Messages](Documentation/Documentation/sending_messages.md)
 
