@@ -38,7 +38,7 @@ bot.listen(/Hello/, message => {
  Congratulations 🎉, you just made your first bot, and it was easy, wasn't it? 
   
  ### Learn more
-  A fan of bots already? Explore the documentation and create amazing bots!
+  A fan of bots already? Explore the [documentation](Documentation/index.html) and create amazing bots!
   
   Have questions? Join our Slack Team and ask your questions!
   Found a bug? Please fill an issue on GitHub.
