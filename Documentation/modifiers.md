@@ -68,4 +68,6 @@ bot.modifiers.middleware('hear', params => {
 ```
 
 Okay, let's go through the code above step by step.
-First we register a middleware on `hear`, please note that `listen` just calls `hear` with the `mention: true` parameter which requires the bot to be mentioned.
+First we register a middleware on `hear`, please note that `listen` just calls `hear` with the `mention: true` parameter which requires the bot to be mentioned, so they both go through this middleware.
+
+
