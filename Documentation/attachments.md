@@ -58,7 +58,7 @@ Default fallback: `Author: ${name}, ${link}, ${icon}`.
    attachments.author('Mahdi Dibaiee', 'http://dibaiee.ir', 'http://gravatar.com/...');
 ```
 
-See Attachments#author_name, Attachments#author_link and Attachments#author_icon.
+See [Attachments#author_parameters](https://api.slack.com/docs/attachments#author_parameters).
 
 ###title
 Sets the `title` and `title_link` properties.
@@ -69,6 +69,8 @@ Default fallback: `Title: ${title}, ${link}`.
    attachments.title('Something Amazing', 'somethingamazing.com');
 ```
 
+See [Attachments#title_and_title_link](https://api.slack.com/docs/attachments#title_and_title_link).
+
 ###fields
 This method doesn't do anything special, just adds an attachment with the `fields` property set.
 No fallback value is set for this type.
@@ -77,6 +79,8 @@ No fallback value is set for this type.
   const attachments = new bot.Attachments();
   attachments.fields([{ title: 'Hi', short: true }]);
 ```
+
+See [Attachments#fields](https://api.slack.com/docs/attachments#fields).
 
 ###add
 Adds an attachment to the array.
@@ -89,3 +93,4 @@ Adds an attachment to the array.
     fallback: 'Something: Yep!'
   });
 ```
+
