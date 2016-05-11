@@ -42,4 +42,5 @@ bot.modifiers.preprocess('listen', (pattern, fn) => {
 });
 ```
 
-
+##Postprocess
+Postprocessors take the return value of a function, and their return value is then returned from the original function.
