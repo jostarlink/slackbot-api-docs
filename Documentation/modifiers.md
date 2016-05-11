@@ -57,11 +57,15 @@ Middlewares let you modify important parameters of a function and decide whether
 Middlewares must return a promise which, if rejected stops the function from proceeding, else proceeds to the next middleware until all middlewares are processed.
 
 ```javascript
-const admins = ['mahdi', 'admin'];
 bot.modifiers.middleware('hear', params => {
+  const admins = params.admins;
   const name = bot.find(params.user).name;
+  
   if (admins.includes(name)) return Promise.resolve();
   
   return Promise.reject();
 });
 ```
+
+Okay, let's go through the code above step by step.
+First we register a middleware on `hear`, please note that `listen` just calls `hear` with the `mention: true` parameter which requires the bot to be mentioned.
