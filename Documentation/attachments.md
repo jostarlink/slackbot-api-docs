@@ -55,5 +55,14 @@ Default fallback: `Author: ${name}, ${link}, ${icon}`.
 
 ```javascript
    const attachments = new bot.Attachments();
+   attachments.author('Mahdi Dibaiee', 'http://dibaiee.ir', 'http://gravatar.com/...');
+```
+
+###title
+Sets the `title` and `title_link` properties.
+Default fallback: `Title: ${title}, ${link}`.
+
+```javascript
+   const attachments = new bot.Attachments();
    attachments.author('Mahdi Dibaiee', 'http://dibaiee.ir');
 ```
