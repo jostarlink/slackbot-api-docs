@@ -71,3 +71,19 @@ Default fallback: `Title: ${title}, ${link}`.
 This method doesn't do anything special, just adds an attachment with the `fields` property set.
 No fallback value is set for this type.
 
+```javascript
+  const attachments = new bot.Attachments();
+  attachments.fields([{ title: 'Hi', short: true }]);
+```
+
+###add
+Adds an attachment to the array.
+
+```javascript
+  const attachments = new bot.Attachments();
+  attachments.add({
+    title: 'Something',
+    text: 'Yep!',
+    fallback: 'Something, Yep'
+  });
+```
