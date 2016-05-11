@@ -44,3 +44,24 @@ bot.modifiers.preprocess('listen', (pattern, fn) => {
 
 ##Postprocess
 Postprocessors take the return value of a function, and their return value is then returned from the original function.
+
+```javascript
+bot.modifiers.postproess('listen', (bot) => {
+  return bot.users[bot.users.length - 1]; // I have no idea why either :D
+});
+```
+
+##Middlewares
+Middlewares let you modify important parameters of a function and decide whether the function should proceed or not.
+
+Middlewares must return a promise which, if rejected stops the function from proceeding, else proceeds to the next middleware.
+
+```javascript
+const admins = ['mahdi', 'admin'];
+bot.modifiers.middleware('hear', params => {
+  const name = bot.find(params.user).name;
+  if (admins.includes(name)) return Promise.resolve();
+  
+  return Promise.reject();
+});
+```
