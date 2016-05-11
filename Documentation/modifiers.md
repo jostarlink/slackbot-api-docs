@@ -88,3 +88,4 @@ bot.listen(/sudo/, message => {
 ```
 
 This way, middlewares become even more flexible, they can read parameters from the user.
+Let's continue with our function: After reading the `admins` array, we match the user sending us the message with the admins array. If the user is an admin, let the function proceed (in this case calling event listeners), otherwise just stop processing.
