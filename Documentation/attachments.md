@@ -9,5 +9,11 @@
  The `bot.Attachments` class extends `Array`, so you can treat it just like an array.
  There are methods for most of your formatting needs:
  
- ###good, warning, danger!
+ ###good, warning, danger! (and goodOr)
  These methods are aliases for `color: good | warning | danger`.
+ 
+ They take the `text` as first parameter and another `params`. By default, the `fallback` value is set to: `Good: ${text}`.
+ 
+ ```javascript
+   
+ ```
