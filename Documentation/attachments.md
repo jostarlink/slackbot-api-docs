@@ -7,3 +7,7 @@
  
 ##Introduction
  The `bot.Attachments` class extends `Array`, so you can treat it just like an array.
+ There are methods for most of your formatting needs:
+ 
+ ###good, warning, danger!
+ These methods are aliases for `color: good | warning | danger`.
