@@ -84,6 +84,6 @@ Adds an attachment to the array.
   attachments.add({
     title: 'Something',
     text: 'Yep!',
-    fallback: 'Something, Yep'
+    fallback: 'Something: Yep!'
   });
 ```
