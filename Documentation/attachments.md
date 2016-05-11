@@ -36,7 +36,7 @@
     console.log(attachments.length); // 1
  ```
  
- For more information see [Attachments#color](https://api.slack.com/docs/attachments#color).
+See [Attachments#color](https://api.slack.com/docs/attachments#color).
  
  ###image, thumb
  These are pretty similar, they take a `url` and a `params` object.
