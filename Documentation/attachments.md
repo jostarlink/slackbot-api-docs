@@ -45,5 +45,15 @@
 ```javascript
    const attachments = new bot.Attachments();
    attachments.image('http://imgur.com/xswer');
- 
+```
+
+See [Attachments#image_url](https://api.slack.com/docs/attachments#image_url) and [Attachments#thumb_url](https://api.slack.com/docs/attachments#thumb_url).
+
+###author
+Specifies the `author_name`, `author_link` and `author_icon`. Takes parameters for these properties in order.
+Default fallback: `Author: ${name}, ${link}, ${icon}`.
+
+```javascript
+   const attachments = new bot.Attachments();
+   attachments.author('Mahdi Dibaiee', 'http://dibaiee.ir');
 ```
