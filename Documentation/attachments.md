@@ -64,5 +64,10 @@ Default fallback: `Title: ${title}, ${link}`.
 
 ```javascript
    const attachments = new bot.Attachments();
-   attachments.author('Mahdi Dibaiee', 'http://dibaiee.ir');
+   attachments.title('Something Amazing', 'somethingamazing.com');
 ```
+
+###fields
+This method doesn't do anything special, just adds an attachment with the `fields` property set.
+No fallback value is set for this type.
+
