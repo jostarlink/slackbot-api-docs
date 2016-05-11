@@ -91,4 +91,4 @@ This way, middlewares become even more flexible, they can read parameters from t
 Let's continue with our function: After reading the `admins` array, we match the user sending us the message with the admins array. If the user is an admin, let the function proceed (in this case calling event listeners), otherwise, break the chain.
 
 
-The code above
+The example above is a simplified version of [`bolt-permissions`](https://github.com/slack-bolt/bolt-permissions) which includes usergroups and such.
