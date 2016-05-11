@@ -93,4 +93,3 @@ Adds an attachment to the array.
     fallback: 'Something: Yep!'
   });
 ```
-
