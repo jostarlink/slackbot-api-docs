@@ -54,7 +54,7 @@ bot.modifiers.postproess('listen', (bot) => {
 ##Middlewares
 Middlewares let you modify important parameters of a function and decide whether the function should proceed or not.
 
-Middlewares must return a promise which, if rejected stops the function from proceeding, else proceeds to the next middleware.
+Middlewares must return a promise which, if rejected stops the function from proceeding, else proceeds to the next middleware until all middlewares are processed.
 
 ```javascript
 const admins = ['mahdi', 'admin'];
