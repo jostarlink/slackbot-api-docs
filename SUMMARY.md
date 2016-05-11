@@ -7,5 +7,5 @@
    * [Message Methods and Events](Documentation/message-methods-and-events.md)
    * [Utilities](Documentation/utilities.md)
    * [Modifiers](Documentation/modifiers.md)
-   * Attachments
+   * [Attachments](Documentation/attachments.md)
 
