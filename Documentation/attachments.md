@@ -3,6 +3,4 @@
  
  As fun as they might seem, writing attachment objects is not really that easy, sometimes the attachments become a large object which is hard to maintain.
  
- That's why we have an Attachment class which helps you create attachment objects.
- 
- 
+ That's why we have an Attachment class which helps you create attachment formattings.
