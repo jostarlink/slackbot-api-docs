@@ -69,5 +69,22 @@ bot.modifiers.middleware('hear', params => {
 
 Okay, let's go through the code above step by step.
 First we register a middleware on `hear`, please note that `listen` just calls `hear` with the `mention: true` parameter which requires the bot to be mentioned, so they both go through this middleware.
+Then we're reading `params.admins`, you might wonder what that means. Almost all methods accept a `params` as their last argument, as listen and hear do. Take a look:
 
+```javascript
+  listen(regex, listener, params = {}) {
+    params.mention = true;
 
+    return this.hear(regex, listener, params);
+  }
+```
+
+Here, it means the user can specify an `admins` array on `listen` calls, like so:
+
+```javascript
+bot.listen(/sudo/, message => {
+  message.reply('As you command!');
+}, { admins: ['mahdi', 'admin'] });
+```
+
+This way, middlewares become even more flexible, they can read parameters from the user.
