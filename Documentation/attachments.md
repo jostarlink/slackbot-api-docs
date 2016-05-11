@@ -37,3 +37,13 @@
  ```
  
  For more information see [Attachments#color](https://api.slack.com/docs/attachments#color).
+ 
+ ###image, thumb
+ These are pretty similar, they take a `url` and a `params` object.
+ Default fallback of these types is `Image: ${url}` or `Thumb: ${url}`.
+ 
+```javascript
+   const attachments = new bot.Attachments();
+   attachments.image('http://imgur.com/xswer');
+ 
+```
