@@ -5,7 +5,7 @@
  
  That's why we have an `Attachments` class which helps you create attachment formattings.
  
- _Note: websocket must be set to false to send attachments. See [chat.postMessage](https://api.slack.com/methods/chat.postMessage)_
+ _Note: `websocket` must be set to `false` to send attachments. See [chat.postMessage](https://api.slack.com/methods/chat.postMessage)_
  
 ##Introduction
  The `bot.Attachments` class extends `Array`, so you can treat it just like an array.
